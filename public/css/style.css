@@ -1,0 +1,250 @@
+/*Estilos generales*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+@import url("./register.css")
+* {
+    font-family: Roboto;
+    margin: 0px;
+    padding: 0px; 
+    box-sizing:border-box;
+}
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+body {
+    background-color: #ebebeb;
+}
+
+/* Header */
+.header {
+    background-color: #EAC926;
+    
+}
+.parte-arriba {
+    padding: 5%;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 50%;
+    padding: 5%;
+}
+header nav {
+    font-size: 12px;
+    display: none;
+}
+header .busqueda {
+    display: flex; 
+    align-items: center;
+    height: 30px;   
+}
+.div-busqueda {
+    width: 50%;
+}
+header p {
+    text-align: center;
+    padding:5%;
+    width: 100%;
+}
+
+
+
+/* sacarle a la lista el punto*/
+header ul li {
+    list-style-type: none; 
+}
+header ul {
+    padding-bottom: 10px;
+}
+header ul li {
+    padding-right: 5px;
+}
+/* sacarle a los links el subrayad*/
+header ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+/*banner*/
+.banner img {
+    width: 100%;
+}
+
+/* caja producto */
+
+main section article {
+    background-color: #fff;
+    margin: 10px 0px;
+    
+
+}
+
+
+main section article img {
+    width: 100%;
+}
+/* Tamaño letra*/
+.tituloseccion {
+    font-size: 24px;
+    color: #666;
+}
+.precios {
+    font-size: 18px;
+    padding-right: 5px;
+}
+.ofertas {
+    font-size: 16px;
+    color: #39b54a;
+}
+.descripcionproducto {
+    font-size: 16px;
+    color: #666;
+}
+.cuerpostexto {
+    font-size: 12px;
+}
+
+/* color camion y circulo*/
+.fa-truck {
+    color: #39b54a;
+    text-align: center;
+}
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 25px;
+    top: -20px;
+}
+/*caja camion-prcio-oferta*/
+.caja-precio-oferta-camion {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 5px;
+    position: relative;
+}
+main section h3 {
+    margin: 20px 0px;
+}
+/*caja precios*/
+.caja-precio {
+    display: flex;
+    align-items: center;
+}
+.caja-precio .precio {
+    width: 40%;
+}
+.caja-precio .oferta {
+    width: 60%;
+}
+
+/* menu hamburguesa*/
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+}
+/* para ue se opaque al pasar el mouse*/
+.descripcionproducto {
+    opacity: 0;
+    transition: all 2s;
+    margin-top: 20px;
+}
+
+
+/* FOOTER */
+footer section {
+    text-align: center;
+}
+.seguridad {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.envio {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    
+}
+.tarjeta {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+footer p {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+@media (min-width: 361px){
+    
+    header nav { 
+        display: flex;
+    }
+    header nav ul {
+        display: flex;
+    }
+    .caja-productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .caja-productos article {
+        width: 45%;
+        transition: box-shadow 1s;
+    }
+    
+    main section article:hover .descripcionproducto {
+        opacity: 1;
+    }
+
+    main section article:hover {
+        box-shadow: 0px 0px 25px rgb(100, 100, 100);
+    }
+}
+@media (min-width: 769px){
+    .caja-productos article {
+        width: 22%;
+        box-shadow: 0px 0px 25px rgb(100, 100, 100);
+    }
+    .burger-menu {
+        display: none;
+    }   
+    
+    .parte-arriba {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav {
+        padding: 5px;
+        display: flex;
+        justify-content: space-between
+    }
+    nav ul {
+        display: flex;
+    }
+    footer section {
+        display: flex;
+        flex-wrap: center;
+        
+    }
+    footer p {
+        text-align: left;
+    }
